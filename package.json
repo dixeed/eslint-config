@@ -1,0 +1,40 @@
+{
+  "name": "@dixeed/eslint-config",
+  "version": "0.0.0-development",
+  "private": false,
+  "description": "Package gathering all eslint configurations used amongst our Dixeed's projects.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dixeed/eslint-config.git"
+  },
+  "author": "Nargonath <jonas.pauthier@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "cm": "git-cz",
+    "commitmsg": "commitlint -e",
+    "precommit": "lint-staged",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "lint-staged": {
+    "{bin,scripts,test}/**/*.{js,css,json}": [
+      "prettier --single-quote --write --print-width 100 --trailing-comma es5",
+      "git add"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "3.2.0",
+    "@commitlint/config-angular": "3.1.1",
+    "commitizen": "2.9.6",
+    "cz-conventional-changelog": "2.0.0",
+    "husky": "0.14.3",
+    "lint-staged": "4.2.1",
+    "prettier": "1.7.0",
+    "semantic-release": "8.0.0"
+  }
+}
