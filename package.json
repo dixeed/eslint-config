@@ -1,6 +1,6 @@
 {
   "name": "@dixeed/eslint-config",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "private": false,
   "description": "Package gathering all eslint configurations used amongst our Dixeed's projects.",
   "main": "index.js",
@@ -27,6 +27,7 @@
       "path": "cz-conventional-changelog"
     }
   },
+  "keywords": ["eslint", "eslint-config", "eslintconfig", "angularjs"],
   "files": ["index.js", "angularjs.js", "lib"],
   "peerDependencies": {
     "eslint": ">=4.0.0",
