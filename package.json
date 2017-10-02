@@ -1,6 +1,6 @@
 {
   "name": "@dixeed/eslint-config",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "private": false,
   "description": "Package gathering all eslint configurations used amongst our Dixeed's projects.",
   "main": "index.js",
