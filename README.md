@@ -13,6 +13,24 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT)
 
+## Usage
+Install the package as dev dependency in your project:
+`npm install -D @dixeed/eslint-config` or `yarn add -D @dixeed/eslint-config`
+
+Create a an `.eslintrc` file in your project and extends the desired configuration. This repo contains 2 configurations:
+* Base conf: available as `@dixeed/eslint-config`
+* AngularJS conf: available as `@dixeed/eslint-config/angularjs`
+
+To use one of them write an `extends` field on the aforementioned `.eslintrc` i.e :
+```json
+{
+  "extends": ["@dixeed/eslint-config"]
+}
+```
+
+### Requirements
+The configuration will require you to install its peer dependencies into your project for it to work.
+
 ## Contributing
 This project uses [semantic-release](https://github.com/semantic-release/semantic-release) to automatically handle semver bumps based on the commits messages.
 
